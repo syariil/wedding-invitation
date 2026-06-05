@@ -116,7 +116,7 @@ export default async function Home({ searchParams }) {
                 Laode Mesran
               </h2>
               <p className="text-sage-600 text-sm">
-                Putri dari Bpk. Laode Rasiu & Ibu Musiya
+                Putra dari Bpk. Laode Rasiu & Ibu Musiya
               </p>
             </FadeIn>
           </div>
