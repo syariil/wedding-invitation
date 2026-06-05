@@ -3,7 +3,8 @@ import Image from "next/image";
 import RsvpSection from "@/components/RsvpSection";
 import GiftSection from "@/components/GiftSection";
 import FadeIn from "@/components/FadeIn";
-import MusicPlayer from "@/components/MusicPlayer";
+// import MusicPlayer from "@/components/MusicPlayer";
+import Cover from "@/components/cover";
 
 export default async function Home({ searchParams }) {
   // In Next.js 15, searchParams is an asynchronous promise
@@ -12,7 +13,8 @@ export default async function Home({ searchParams }) {
 
   return (
     <main className="relative min-h-screen w-full overflow-x-hidden text-sage-900">
-      <MusicPlayer />
+      <Cover guestName={guestName} />
+      {/* <MusicPlayer /> */}
       {/* 1. HERO SECTION */}
       <section className="relative min-h-screen flex flex-col items-center justify-center p-8 text-center bg-sage-50 overflow-hidden z-0">
         <Image
@@ -26,7 +28,7 @@ export default async function Home({ searchParams }) {
         <div className="absolute inset-0 bg-white/40 -z-10" />
 
         <FadeIn className="z-10 flex flex-col items-center">
-          {guestName && (
+          {/* {guestName && (
             <div className="mb-12 p-6 md:px-12 bg-white/80 backdrop-blur-md rounded-3xl border border-sage-200 shadow-sm">
               <p className="text-sage-600 mb-2 font-medium">
                 Kepada Yth. Bapak/Ibu/Saudara/i,
@@ -38,7 +40,7 @@ export default async function Home({ searchParams }) {
                 Kami mengundang Anda untuk hadir di hari bahagia kami.
               </p>
             </div>
-          )}
+          )} */}
 
           <p className="text-sm tracking-[0.3em] uppercase text-sage-700 mb-6 font-semibold">
             The Wedding Of
@@ -62,11 +64,14 @@ export default async function Home({ searchParams }) {
         />
         <FadeIn className="max-w-3xl mx-auto w-full">
           <Heart className="w-8 h-8 text-sage-400 mx-auto mb-8" />
-          <p className="text-sage-700 mb-16 leading-relaxed max-w-xl mx-auto italic">
-            "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
-            untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung
-            dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa
-            kasih dan sayang."
+          <p className="text-sage-700 mb-16 leading-relaxed max-w-xl mx-auto">
+            <span className="italic">
+              "Dan di antara tanda-tanda kekuasaan-Nya ialah Dia menciptakan
+              untukmu isteri-isteri dari jenismu sendiri, supaya kamu cenderung
+              dan merasa tenteram kepadanya, dan dijadikan-Nya diantaramu rasa
+              kasih dan sayang."
+            </span>{" "}
+            <span className="font-bold">Ar-rum ayat 21</span>
           </p>
 
           <div className="flex flex-col md:flex-row items-center justify-center gap-16">
@@ -88,7 +93,7 @@ export default async function Home({ searchParams }) {
                 Risa Yulian Ode Inggi
               </h2>
               <p className="text-sage-600 text-sm">
-                Putri dari Bpk. Jamaludin Dentau & Ibu Yana Wahid
+                Anak Pertama dari Bpk. Jamaludin Dentau & Ibu Yana Wahid
               </p>
             </FadeIn>
 
@@ -116,7 +121,7 @@ export default async function Home({ searchParams }) {
                 Laode Mesran
               </h2>
               <p className="text-sage-600 text-sm">
-                Putra dari Bpk. Laode Rasiu & Ibu Musiya
+                Anak pertama dari Bpk. Laode Rasiu & Ibu Musiya
               </p>
             </FadeIn>
           </div>
@@ -182,7 +187,7 @@ export default async function Home({ searchParams }) {
               </div>
               <div className="flex items-center gap-3 text-sage-600 mb-8">
                 <Clock className="w-5 h-5" />
-                <span>19:30 WIB - Selesai</span>
+                <span>19:30 WITA - Selesai</span>
               </div>
               <p className="font-semibold text-sage-900 mb-2">
                 Kediaman Mempelai Wanita
@@ -210,7 +215,9 @@ export default async function Home({ searchParams }) {
       <footer className="py-8 bg-sage-900 text-center text-sage-400 text-sm">
         <p>
           Develop By{" "}
-          <a href="https://www.instagram.com/syahrii_l">Muhamaad Syahril</a>
+          <a href="https://www.instagram.com/syahrii_l">
+            Muhamaad Syahril (klick my name know more😎)
+          </a>
         </p>
         <p className="mt-2">&copy; 2026 Risa & Rambo</p>
       </footer>

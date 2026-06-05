@@ -68,7 +68,7 @@ export default function GiftSection() {
             direction="up"
             className="bg-white p-8 rounded-3xl shadow-sm border border-sage-100 flex flex-col items-center">
             <CreditCard className="w-8 h-8 text-sage-300 mb-4" />
-            <h3 className="text-xl font-bold text-sage-800 mb-2">Mandiri</h3>
+            <h3 className="text-xl font-bold text-sage-800 mb-2">MANDIRI</h3>
             <p className="text-sage-600 mb-1">A.n RISA YULIAN ODE INGGI</p>
             <p className="text-2xl font-mono text-sage-900 tracking-wider mb-6">
               1510020584287
